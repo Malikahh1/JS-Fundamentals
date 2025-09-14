@@ -1,0 +1,10 @@
+// Prints a message depending on the number of arguments passed
+
+const argCount = process.argv.length - 2; // subtract node + script name
+if (argCount === 0) {
+  console.log('No argument');
+} else if (argCount === 1) {
+  console.log('Argument found');
+} else {
+  console.log('Arguments found');
+}
